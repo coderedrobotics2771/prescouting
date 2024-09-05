@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<nav>
+    <a href="#user-management">User Management</a>
+    <a href="#content-management">Content Management</a>
+    <a href="#settings">Settings</a>
+    <a href="logout.html">Logout</a>
+</nav>
+
+<main>
+    <section id="user-management">
+        <h2>User Management</h2>
+        <p>Here you can add, edit, or remove users.</p>
+        <button onclick="manageUsers()">Manage Users</button>
+    </section>
+
+    <section id="content-management">
+        <h2>Content Management</h2>
+        <p>Update site content, images, and more.</p>
+        <button onclick="manageContent()">Manage Content</button>
+    </section>
+
+    <section id="settings">
+        <h2>Settings</h2>
+        <p>Adjust system settings and preferences.</p>
+        <button onclick="openSettings()">Change Settings</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Admin Panel</p>
+</footer>
+
+<script>
+    function manageUsers() {
+        alert('User management functionality will go here.');
+    }
+
+    function manageContent() {
+        alert('Content management functionality will go here.');
+    }
+
+    function openSettings() {
+        alert('Settings functionality will go here.');
+    }
+</script>
+
+</body>
+</html>
 
