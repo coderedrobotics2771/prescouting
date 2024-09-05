@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         messageDiv.style.color = 'green';
 
         // Redirect to pages/index.html upon successful login
-        window.location.href = 'pages/index.html';
+        window.location.href = 'pages/2025/index.html';
     } else {
         messageDiv.textContent = 'Invalid username or password!';
         messageDiv.style.color = 'red';
