@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         if (username === 'admin') {
             window.location.href = 'pages/admin/index.html'; // Admin page
         } else if (username === '2771') {
-            window.location.href = 'pages/2025/index.html'; // 2771 user page
+            window.location.href = 'pages/index.html'; // 2771 user page
         }
     } else {
         messageDiv.textContent = 'Invalid username or password!';
