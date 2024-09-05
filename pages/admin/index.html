@@ -1,111 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 2rem;
-        }
-        section {
-            background-color: white;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            margin-top: 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
+    <title>Admin | Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<header>
-    <h1>Admin Dashboard</h1>
-</header>
+  <body>
+    <!-- Logout Button -->
+    <div id="logout" style="text-align: right; padding: 10px;">
+      <button onclick="logout()">Logout</button>
+    </div>
 
-<nav>
-    <a href="#user-management">User Management</a>
-    <a href="#content-management">Content Management</a>
-    <a href="#settings">Settings</a>
-    <a href="logout.html">Logout</a>
-</nav>
-
-<main>
-    <section id="user-management">
-        <h2>User Management</h2>
-        <p>Here you can add, edit, or remove users.</p>
-        <button onclick="manageUsers()">Manage Users</button>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </section>
+    <!-- End of Parallax Pixel Background Animation -->
 
-    <section id="content-management">
-        <h2>Content Management</h2>
-        <p>Update site content, images, and more.</p>
-        <button onclick="manageContent()">Manage Content</button>
-    </section>
+    <div id="links">
+      <h1>aaroncole.us</h1>
+      <a class="link" href="https://server.coderedscouting.com/pages/2024/index.html">
+        <i class="fa fa-play-mail">&nbsp;</i>2024 Home Page
+      </a>
+      <a class="link" href="https://server.coderedscouting.com/pages/2025/index.html">
+        <i class="fa fa-play-mail">&nbsp;</i>2025 Home Page
+      </a>  
+      <a class="link" href="index.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Admin Panel
+      </a>
+    </div>
 
-    <section id="settings">
-        <h2>Settings</h2>
-        <p>Adjust system settings and preferences.</p>
-        <button onclick="openSettings()">Change Settings</button>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2024 Admin Panel</p>
-</footer>
-
-<script>
-    function manageUsers() {
-        alert('User management functionality will go here.');
-    }
-
-    function manageContent() {
-        alert('Content management functionality will go here.');
-    }
-
-    function openSettings() {
-        alert('Settings functionality will go here.');
-    }
-</script>
-
-</body>
+    <script>
+      function logout() {
+        // Implement logout functionality here
+        alert('You have logged out.');
+        // Redirect to the login page or perform other actions as needed
+        window.location.href = 'logout.html';
+      }
+    </script>
+  </body>
 </html>
-
